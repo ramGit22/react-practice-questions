@@ -1,29 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
+import Task from './Task';
 
-// Task Component
-const Task = ({ task, onChecked }) => {
-  const [isCompleted, setIsCompleted] = useState(false);
-
-  const handleCheckboxChange = () => {
-    setIsCompleted(!isCompleted);
-    onChecked();
-  };
-
-  return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <input
-        type="checkbox"
-        checked={isCompleted}
-        onChange={handleCheckboxChange}
-      />
-      <p style={{ textDecoration: isCompleted ? 'line-through' : 'none' }}>
-        {task.description}
-      </p>
-    </div>
-  );
-};
-
-// TaskList Component
 const TaskList = () => {
   const [tasks, setTasks] = useState([
     { id: 1, description: 'Task 1' },
