@@ -6,8 +6,7 @@ This repository contains the solutions to the practice assignments discussed in 
 
 ## Getting Started
 
- Each solution is in a separate subdirectory with a descriptive name. The instructions for each solution are located in the README.md file within the subdirectory.
-
+ Each solution is in a separate subdirectory with a descriptive name. Further information will be provided later.
 
 ## Contributions
 Contributions are welcome! If you would like to improve the code, please open an issue or submit a pull request.
