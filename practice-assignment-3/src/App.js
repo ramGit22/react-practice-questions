@@ -1,8 +1,8 @@
 import React from 'react';
-import Country from './components/Country';
+import CountryList from './components/CountryList';
 
 const App = () => {
-  return <Country />;
+  return <CountryList />;
 };
 
 export default App;

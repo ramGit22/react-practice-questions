@@ -16,6 +16,7 @@ const App = () => {
       .catch((error) => {
         console.error(error);
       });
+    console.log('countries', countries);
   }, []);
 
   const openModal = (country) => {
@@ -32,15 +33,21 @@ const App = () => {
       <table>
         <thead>
           <tr>
+            <th>Name</th>
             <th>Capital</th>
             <th>Population</th>
+            <th>Flag</th>
           </tr>
         </thead>
         <tbody>
           {countries.map((country, index) => (
             <tr key={index} onClick={() => openModal(country)}>
+              <td>{country.name}</td>
               <td>{country.capital}</td>
               <td>{country.population}</td>
+              <td>
+                <img src={country.flags.svg} alt={country.name} height="50px" />
+              </td>
             </tr>
           ))}
         </tbody>
